@@ -3,7 +3,6 @@ public class Penumpang {
     private String nama;
     private String noTelphone;
     private String email;
-    private String noKursi;
 
     public Penumpang(String idPenumpang, String nama) {
         this.idPenumpang = idPenumpang;
@@ -28,10 +27,6 @@ public class Penumpang {
 
     public String getEmail() {
         return email;
-    }
-
-    public String getNoKursi() {
-        return noKursi;
     }
 
 }
