@@ -1,6 +1,8 @@
 public class Penumpang {
     private String idPenumpang;
     private String nama;
+    private String noTelphone;
+    private String email;
 
     public Penumpang(String idPenumpang, String nama) {
         this.idPenumpang = idPenumpang;
@@ -10,4 +12,5 @@ public class Penumpang {
     public void pesanTiket() {
         System.out.println(nama + " sedang memesan tiket");
     }
+
 }
