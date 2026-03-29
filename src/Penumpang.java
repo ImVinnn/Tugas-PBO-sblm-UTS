@@ -3,6 +3,7 @@ public class Penumpang {
     private String nama;
     private String noTelphone;
     private String email;
+    private String noKursi;
 
     public Penumpang(String idPenumpang, String nama) {
         this.idPenumpang = idPenumpang;
@@ -11,6 +12,26 @@ public class Penumpang {
 
     public void pesanTiket() {
         System.out.println(nama + " sedang memesan tiket");
+    }
+
+    public String getIdPenumpang() {
+        return idPenumpang;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public String getNoTelphone() {
+        return noTelphone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getNoKursi() {
+        return noKursi;
     }
 
 }

@@ -11,4 +11,13 @@ public class Jadwal {
         System.out.println("Jam Datang: " + jamDatang);
         System.out.println("Jam Berangkat: " + jamBerangkat);
     }
+
+    public String getJamDatang() {
+        return jamDatang;
+    }
+
+    public String getJamBerangkat() {
+        return jamBerangkat;
+    }
+
 }

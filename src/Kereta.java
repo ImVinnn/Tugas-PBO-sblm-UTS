@@ -12,4 +12,16 @@ public class Kereta {
     public void ruteTujuan() {
         System.out.println("Menampilkan rute tujuan kereta " + namaKA);
     }
+
+    public String getNoKA() {
+        return noKA;
+    }
+
+    public String getNamaKA() {
+        return namaKA;
+    }
+
+    public String getKelasKA() {
+        return kelasKA;
+    }
 }

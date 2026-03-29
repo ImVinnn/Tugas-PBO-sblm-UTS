@@ -6,4 +6,12 @@ public class Kota {
         this.idKota = idKota;
         this.namaKota = namaKota;
     }
+
+    public String getIdKota() {
+        return idKota;
+    }
+
+    public String getNamaKota() {
+        return namaKota;
+    }
 }

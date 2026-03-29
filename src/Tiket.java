@@ -14,4 +14,12 @@ public class Tiket {
     public double hitungHarga(double diskon) {
         return harga - (harga * diskon);
     }
+
+    public String getIdTiket() {
+        return idTiket;
+    }
+
+    public double getHarga() {
+        return harga;
+    }
 }

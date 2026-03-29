@@ -10,4 +10,12 @@ public class Stasiun {
     public void cekJadwal() {
         System.out.println("Cek jadwal di stasiun " + namaStasiun);
     }
+
+    public String getKodeStasiun() {
+        return kodeStasiun;
+    }
+
+    public String getNamaStasiun() {
+        return namaStasiun;
+    }
 }
