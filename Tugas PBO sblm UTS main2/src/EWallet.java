@@ -1,7 +1,12 @@
+// File : EWallet.java
+// Deskripsi : Class EWallet yang mengimplementasikan interface Pembayaran
+
 public class EWallet implements Pembayaran {
+    // atribut saldo dan namaPemilik untuk menyimpan informasi saldo dan nama pemilik e-wallet
     private double saldo;
     private String namaPemilik;
 
+    // constructor dengan parameter untuk inisialisasi atribut
     public EWallet(String namaPemilik, double saldo) {
         // Assertion: saldo awal tidak boleh negatif
         assert saldo >= 0 : "Saldo awal tidak boleh negatif";
@@ -24,14 +29,17 @@ public class EWallet implements Pembayaran {
         System.out.println(namaPemilik + " berhasil membayar Rp" + jumlah + ". Sisa saldo: Rp" + saldo);
     }
 
+    // getter ugetSaldo() untuk mengakses saldo
     public double getSaldo() {
         return saldo;
     }
 
+    // getter getNamaPemilik() untuk mengakses nama pemilik
     public String getNamaPemilik() {
         return namaPemilik;
     }
     
+    // setter untuk saldo dan nama pemilik dengan validasi
     public void setSaldo(double saldo) {
     if (saldo < 0) {
         throw new IllegalArgumentException("Saldo tidak boleh negatif");
